@@ -33,6 +33,10 @@ console.log(elementChildren);
 
 //Ticket 2d
 
-const lastAndFirstChildren = document.getElementById("itemList").firstChild.lastChild;
-console.log(lastAndFirstChildren);
+const firstChildren = document.getElementById("itemList").firstElementChild;
+const lastChildren = document.getElementById('itemList').lastElementChild;
+// // console.log(firstChildren);
+console.log(firstChildren);
+console.log(lastChildren);
 
+// 
