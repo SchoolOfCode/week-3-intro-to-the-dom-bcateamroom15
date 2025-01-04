@@ -71,5 +71,44 @@ console.log(content);
 
 //Ticket 3d
 
-//const secondPelement = document.querySelectorAll('.content' [1]);
-//secondPelement.setAttribute("title", "Hover over me!"); 
+//**Instructions**:
+// - Select the second `<p>` element with the class "content"
+// - Add a title attribute with the value "Hover over me!" using JavaScript.
+// **Expected Outcome**:
+//- When you hover over the second paragraph with the class "content", a tooltip should appear with the text "Hover over me!".
+
+
+const paragraphContent = document.querySelectorAll('p.content');
+const secondElement = paragraphContent[1];
+secondElement.setAttribute("title", "Hover over me!"); 
+console.log(secondElement)
+
+
+
+//Ticket 3e
+    //Select the <ul> element with the id of "itemList".
+    //Add a new class "styled-list" to it using JavaScript.
+    //Select the <li> element with the content "🍌 Banana".
+    //Remove the class "list-item" from it using JavaScript.
+    
+
+const elementId = document.getElementById("itemList");
+
+elementId.classList.add("styled-list");
+
+const liElement = document.querySelectorAll("Banana");
+
+//Ticket 3f: Removing Elements
+
+const listItems = document.querySelectorAll("ul li");
+listItems.forEach(li => {
+    if (li.textContent === "🍇 Date") {
+      li.remove();
+    }
+  });
+
+// - **Instructions**:
+//   - Select the `<li>` element with the content "🍇 Date".
+//   - Remove it from the DOM using JavaScript.
+// - **Expected Outcome**:
+//   - The `<li>` with the content "🍇 Date" should no longer appear in the page.
